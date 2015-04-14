@@ -1,10 +1,24 @@
-<ion-view view-title="Friends">
+<ion-view view-title="Friends" scrollable="Yes">
   <ion-content>
-    <ion-list>
+    <!--<ion-list>
       <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        <img ng-src="{{friend.face}}">
+        <img ng-src="{{friend.image}}">
         <h2>{{friend.name}}</h2>
       </ion-item>
+    </ion-list> -->
+    <ion-list class="list card">
+
+      <ion-item class="item" ng-repeat="friend in friends" ><!-- href="#/tab/chats/{{chat.id}}">-->
+
+
+        <div class="col-md-4">
+          <img ng-src="{{friend.image}}" height="200px">
+          <h2 style="font-size:2.5em; font-style:bold;">{{friend.name}}</h2>
+        </div>
+
+        <!-- <i class="icon ion-chevron-right icon-accessory"></i> -->
+      </ion-item>
+
     </ion-list>
   </ion-content>
 </ion-view>
