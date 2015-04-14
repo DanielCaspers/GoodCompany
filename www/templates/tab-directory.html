@@ -2,15 +2,15 @@
   <ion-content>
     <ion-list class="list card">
 
-      <ion-item class="item" ng-repeat="chat in chats" href="#/tab/chats/{{chat.id}}">
+      <ion-item class="item" ng-repeat="person in directory" href="#/tab/directory/{{person.id}}">
 
-        <img class="col-md-6" ng-src="{{chat.image}}" height="325px">
+        <img class="col-md-6" ng-src="{{person.image}}" height="325px">
 
         <div class="col-md-6">
-            <h2 style="font-size:3.5em; font-style:bold;">{{chat.name}}</h2>
-            <h3 style="padding-top:90px;font-size:2em; font-style:bold;word-wrap:break-word"> Activities: {{chat.activities}}</p>
-            <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Room {{chat.roomNumber}}</p>
-            <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Resident since {{chat.since}}</p>
+            <h2 style="font-size:3.5em; font-style:bold;">{{person.name}}</h2>
+            <h3 style="padding-top:90px;font-size:2em; font-style:bold;word-wrap:break-word"> Activities: {{person.activities}}</p>
+            <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Room {{person.roomNumber}}</p>
+            <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Resident since {{person.since}}</p>
         </div>
 
         <i class="icon ion-chevron-right icon-accessory"></i>

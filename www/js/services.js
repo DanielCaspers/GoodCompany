@@ -1,10 +1,10 @@
 angular.module('starter.services', [])
 
-    .factory('Chats', function() {
+    .factory('Directory', function() {
       // Might use a resource here that returns a JSON array
 
       // Some fake testing data
-      var chats = [{
+      var directory = [{
         id: 0,
         name: 'Ben Sparrow',
         activities: 'Golf, Bingo, Horseshoes',
@@ -97,22 +97,22 @@ angular.module('starter.services', [])
         image: 'img/ContactPhotos/elder13.jpg'
       }];
 
-      for (var i = 0; i < chats.length; i++) {
-        var date= moment(chats[i].since,"x");
-        chats[i].since = date.format("ddd MMM Do, YYYY");
+      for (var i = 0; i < directory.length; i++) {
+        var date= moment(directory[i].since,"x");
+        directory[i].since = date.format("ddd MMM Do, YYYY");
       }
 
       return {
         all: function() {
-          return chats;
+          return directory;
         },
-        remove: function(chat) {
-          chats.splice(chats.indexOf(chat), 1);
+        remove: function(person) {
+          directory.splice(directory.indexOf(person), 1);
         },
-        get: function(chatId) {
-          for (var i = 0; i < chats.length; i++) {
-            if (chats[i].id === parseInt(chatId)) {
-              return chats[i];
+        get: function(personID) {
+          for (var i = 0; i < directory.length; i++) {
+            if (directory[i].id === parseInt(personID)) {
+              return directory[i];
             }
           }
           return null;
@@ -123,11 +123,11 @@ angular.module('starter.services', [])
 /**
  * A simple example service that returns some data.
  */
-    .factory('Friends', function() {
+    .factory('Activities', function() {
       // Might use a resource here that returns a JSON array
 
       // Some fake testing data
-      var friends = [{
+      var activities = [{
         id: 0,
         name: 'Golf',
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
@@ -252,11 +252,11 @@ angular.module('starter.services', [])
 
       return {
         all: function() {
-          return friends;
+          return activities;
         },
-        get: function(friendId) {
+        get: function(activityID) {
           // Simple index lookup
-          return friends[friendId];
+          return activities[activityID];
         }
       }
     });
