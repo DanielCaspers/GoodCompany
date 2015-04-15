@@ -38,16 +38,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.notifications', {
-    url: '/notifications',
-    views: {
-      'tab-notifications': {
-        templateUrl: 'templates/tab-notifications.html',
-        controller: 'NotificationsCtrl'
-      }
-    }
-  })
-
   .state('tab.directory', {
       url: '/directory',
       views: {
@@ -62,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-directory': {
           templateUrl: 'templates/person-detail.html',
-          controller: 'PersonDetailCtrl'
+          controller: 'DirectoryCtrl'
         }
       }
     })
@@ -77,11 +67,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.activity-detail', {
-      url: '/activity/:activityID',
+      url: '/activities/:activityID',
       views: {
         'tab-activities': {
           templateUrl: 'templates/activity-detail.html',
-          controller: 'ActivityDetailCtrl'
+          controller: 'ActivitiesCtrl'
         }
       }
     })

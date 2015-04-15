@@ -1,15 +1,8 @@
 <ion-view view-title="Activities" scrollable="Yes">
   <ion-content>
-    <!--<ion-list>
-      <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        <img ng-src="{{friend.image}}">
-        <h2>{{friend.name}}</h2>
-      </ion-item>
-    </ion-list> -->
+
     <ion-list class="list card">
-
       <ion-item class="item" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
-
 
         <div class="col-md-4">
           <img ng-src="{{activity.image}}" height="200px">
@@ -18,7 +11,7 @@
 
         <!-- <i class="icon ion-chevron-right icon-accessory"></i> -->
       </ion-item>
-
     </ion-list>
+
   </ion-content>
 </ion-view>
