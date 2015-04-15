@@ -1,8 +1,8 @@
 <ion-view view-title="Directory">
   <ion-content>
-    <ion-list class="list card">
+    <ion-list class="list">
 
-      <ion-item class="item" ng-repeat="person in directory" href="#/tab/directory/{{person.id}}">
+      <ion-item class="item item-text-wrap card" ng-repeat="person in directory" href="#/tab/directory/{{person.id}}">
 
         <img class="col-md-6" ng-src="{{person.image}}" height="325px">
 

@@ -4,17 +4,27 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{person.name}}">
+<ion-view view-title="{{person.name}}" scrollable="False">
   <ion-nav-bar class="bar-positive">
     <ion-nav-back-button>
     </ion-nav-back-button>
   </ion-nav-bar >
   <ion-content class="padding">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <h2 style="font-size:3.5em; font-style:bold;">{{person.name}}</h2>
-      <h3 style="padding-top:90px;font-size:2em; font-style:bold;word-wrap:break-word"> Activities: {{person.activities}}</p>
-      <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Room {{person.roomNumber}}</p>
-      <h3 style="padding-top:20px;font-size:2em; font-style:bold;"> Resident since {{person.since}}</p>
+      <img  ng-src="{{person.image}}" height="300px">
+      <p style="padding-top:10px;font-size:2em; font-style:bold;"> Room {{person.roomNumber}}</p>
+      <p style="padding-top:10px;font-size:2em; font-style:bold;"> Resident since {{person.since}}</p>
     </div>
+
+    <div class="col-md-6">
+      <p style="font-size:2em; font-style:bold;word-wrap:break-word"> Activities: {{person.activities}}</p>
+      <!--<div class="list list-inset">-->
+        <!--<div class="item" ng-repeat="activity in person.activities track by $index">-->
+          <!--{{activity}}-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
   </ion-content>
 </ion-view>

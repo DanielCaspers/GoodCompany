@@ -1,10 +1,10 @@
 <ion-view view-title="Activities" scrollable="Yes">
   <ion-content>
 
-    <ion-list class="list card">
-      <ion-item class="item" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
+    <ion-list class="list">
+      <ion-item class="item " ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
 
-        <div class="col-md-4">
+        <div >
           <img ng-src="{{activity.image}}" height="200px">
           <h2 style="font-size:2.5em; font-style:bold;">{{activity.name}}</h2>
         </div>
