@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-directory': {
           templateUrl: 'templates/person-detail.html',
-          controller: 'DirectoryCtrl'
+          controller: 'PersonCtrl'
         }
       }
     })
@@ -71,7 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-activities': {
           templateUrl: 'templates/activity-detail.html',
-          controller: 'ActivitiesCtrl'
+          controller: 'ActivityDetailCtrl'
         }
       }
     })

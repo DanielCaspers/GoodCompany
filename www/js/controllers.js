@@ -7,15 +7,15 @@ angular.module('starter.controllers', [])
   }
 })
 
-//.controller('PersonCtrl', function($scope, $stateParams, Directory) {
-//  $scope.directory = Directory.get($stateParams.personID);
-//})
+.controller('PersonCtrl', function($scope, $stateParams, Directory) {
+  $scope.person = Directory.get($stateParams.personID);
+})
 
 .controller('ActivitiesCtrl', function($scope, Activities) {
   $scope.activities = Activities.all();
 })
 
-//.controller('ActivityDetailCtrl', function($scope, $stateParams, Activities) {
-//  $scope.activities = Activities.get($stateParams.activityID);
-//})
+.controller('ActivityDetailCtrl', function($scope, $stateParams, Activities) {
+  $scope.activity = Activities.get($stateParams.activityID);
+})
 ;
