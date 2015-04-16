@@ -7,7 +7,7 @@ angular.module('starter.services', [])
       var directory = [{
         id: 0,
         name: 'Ben Sparrow',
-        activities: ['Golf', 'Bingo', 'Horseshoes'],
+        activities: [ {name:'Golf', id:'11'}, {name:'Bingo', id:'2'}, {name:'Horseshoes', id:'14'}],
         since:'1429040972784',
         roomNumber: '106',
         image: 'img/ContactPhotos/elder1.jpg'
@@ -130,10 +130,14 @@ angular.module('starter.services', [])
       var activities = [{
         id: 0,
         name: 'Antiques',
+        people: [{name:'Mike November', id:'8', image:'img/ContactPhotos/elder9.jpg'}],
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
       }, {
         id: 1,
         name: 'Biking',
+        people: [{name:'Marie Walton', id:'2', image:'img/ContactPhotos/elder3.jpg'}, {name:'Perry Governor', id:'5', image:'img/ContactPhotos/elder6.jpg'},
+          {name:'Marie Walton', id:'2', image:'img/ContactPhotos/elder3.jpg'}
+        ],
         image: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
       }, {
         id: 2,

@@ -34,7 +34,7 @@
           <h3 style="font-size:2.5em; font-style:bold;">Actvities</h3>
           <div class="item item-stable" style="font-size:1.75em; font-style:bold;"
                ng-repeat="activity in person.activities">
-            {{activity}}
+            <a href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
           </div>
         </div>
 

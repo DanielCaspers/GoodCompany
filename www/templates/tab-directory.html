@@ -11,7 +11,7 @@
           <h3 style="padding-top:5px;font-size:1.85em; font-style:bold; color:#444;"> Room {{person.roomNumber}}</h3>
           <h3 class="positive" style="padding-top:80px;font-size:2em; font-style:bold; color:#444;"> Activities: </h3>
           <span class="col-md-4" style="font-size:2em; font-style:bold; color:#444;" ng-repeat="activity in person.activities">
-            {{activity}}
+            <a href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
           </span>
         </div>
 
