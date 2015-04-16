@@ -15,28 +15,28 @@ angular.module('starter.services', [])
         id: 1,
         name: 'Grouch O\'Callahan',
         activities: ['Chess', 'Gardening', 'Rummy'],
-        since:'1425672670000',
+        since:'1427919070000',
         roomNumber: '303',
         image: 'img/ContactPhotos/elder2.jpg'
       }, {
         id: 2,
         name: 'Olga Finlayson',
         activities: ['Reading', 'Drinking', 'Watching TV'],
-        since:'1427919070000',
+        since:'1427141470000',
         roomNumber: '242',
         image: 'img/ContactPhotos/elder3.jpg'
       }, {
         id: 3,
         name: 'Marie Walton',
         activities: ['Hiking', 'Biking', 'Travel'],
-        since:'1427141470000',
+        since:'1425672670000',
         roomNumber: '117',
         image: 'img/ContactPhotos/elder4.jpg'
       }, {
         id: 4,
         name: 'Janet Miller',
         activities: ['Poker', 'Bridge', 'Window Shopping'],
-        since:'1429040972784',
+        since:'1425240670000',
         roomNumber: '321',
         image: 'img/ContactPhotos/elder5.jpg'
       }, {
