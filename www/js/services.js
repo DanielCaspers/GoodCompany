@@ -129,127 +129,122 @@ angular.module('starter.services', [])
       // Some fake testing data
       var activities = [{
         id: 0,
-        name: 'Golf',
+        name: 'Antiques',
         image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
       }, {
         id: 1,
-        name: 'Bingo',
+        name: 'Biking',
         image: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
       }, {
         id: 2,
-        name: 'Horseshoes',
+        name: 'Bingo',
         image: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
       }, {
         id: 3,
-        name: 'Chess',
+        name: 'Book Clubs',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       }, {
         id: 4,
-        name: 'Dominoes',
+        name: 'Bridge',
         image: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
       },{
         id: 5,
-        name: 'Rummy',
+        name: 'Chess',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
         id: 6,
-        name: 'Reading',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 7,
-        name: 'Drinking',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 8,
-        name: 'Watching TV',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 9,
-        name: 'Hiking',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 10,
-        name: 'Biking',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 11,
-        name: 'Travel',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 12,
-        name: 'Poker',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 13,
-        name: 'Bridge',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 14,
-        name: 'Window Shopping',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 15,
-        name: 'History',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 16,
-        name: 'Museums',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 17,
-        name: 'Re-enactments',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 18,
-        name: 'Gardening',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 19,
-        name: 'Sewing',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 20,
-        name: 'Painting',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 21,
-        name: 'Driving',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 22,
-        name: 'Antiques',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 23,
-        name: 'Book Clubs',
-        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-      },{
-        id: 24,
         name: 'Cooking',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
-        id: 25,
-        name: 'Whittling',
+        id: 7,
+        name: 'Dominoes',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
-        id: 26,
+        id: 8,
+        name: 'Drinking',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 9,
+        name: 'Driving',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 10,
+        name: 'Gardening',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 11,
+        name: 'Golf',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 12,
+        name: 'Hiking',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 13,
+        name: 'History',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 14,
+        name: 'Horseshoes',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 15,
+        name: 'Museums',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 16,
+        name: 'Painting',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 17,
+        name: 'Parks',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 18,
         name: 'Piano',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
-        id: 27,
-        name: 'Bingo',
+        id: 19,
+        name: 'Poker',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
-        id: 28,
+        id: 20,
+        name: 'Re-enactments',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 21,
+        name: 'Reading',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 22,
+        name: 'Rummy',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 23,
+        name: 'Sewing',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 24,
+        name: 'Travel',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 25,
         name: 'Walking',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       },{
-        id: 29,
-        name: 'Parks',
+        id: 26,
+        name: 'Watching TV',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 27,
+        name: 'Whittling',
+        image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+      },{
+        id: 28,
+        name: 'Window Shopping',
         image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
       }];
-
-
+      
       return {
         all: function() {
           return activities;
