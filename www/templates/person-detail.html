@@ -10,21 +10,35 @@
     </ion-nav-back-button>
   </ion-nav-bar >
   <ion-content class="padding">
-    <div class="col-md-6">
-      <h2 style="font-size:3.5em; font-style:bold;">{{person.name}}</h2>
-      <img  ng-src="{{person.image}}" height="300px">
-      <p style="padding-top:10px;font-size:2em; font-style:bold;"> Room {{person.roomNumber}}</p>
-      <p style="padding-top:10px;font-size:2em; font-style:bold;"> Resident since {{person.since}}</p>
-    </div>
 
-    <div class="col-md-6">
-      <p style="font-size:2em; font-style:bold;word-wrap:break-word"> Activities: {{person.activities}}</p>
-      <!--<div class="list list-inset">-->
-        <!--<div class="item" ng-repeat="activity in person.activities track by $index">-->
-          <!--{{activity}}-->
-        <!--</div>-->
-      <!--</div>-->
-    </div>
+    <div class="card">
+      <div class="row">
+        <h2 style="font-size:3.5em; font-style:bold;text-align:center;margin:auto;">{{person.name}}</h2>
+      </div>
 
+      <div class="row">
+        <h3 style="padding-top:10px;font-size:2em; font-style:bold;text-align:center;margin:auto;"> Resident Since {{person.since}}</h3>
+      </div>
+
+      <div class="row">
+        <h3 style=" padding-top:10px;padding-bottom:20px;font-size:2em; font-style:bold;text-align:center;margin:auto;"> Room {{person.roomNumber}}</h3>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <img  ng-src="{{person.image}}" height="325px" style="padding-left:40px;">
+        </div>
+
+        <div class="col-md-6 list list-inset item item-stable">
+          <h3 style="font-size:2.5em; font-style:bold;">Actvities</h3>
+          <div class="item item-stable" style="font-size:1.75em; font-style:bold;"
+               ng-repeat="activity in person.activities">
+            {{activity}}
+          </div>
+        </div>
+
+      </div>
+    </div>
   </ion-content>
 </ion-view>

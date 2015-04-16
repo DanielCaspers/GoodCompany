@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.example862713" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>example</name>
+  <name>Activity Intersector</name>
   <description>
-        An Ionic Framework and Cordova project.
+      Find activities you have in common with others
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
+  <author email="caspe135@umn.edu" href="http://github.com/DanielCaspers">
       Ionic Framework Team
     </author>
   <content src="index.html"/>

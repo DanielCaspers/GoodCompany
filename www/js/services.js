@@ -7,91 +7,91 @@ angular.module('starter.services', [])
       var directory = [{
         id: 0,
         name: 'Ben Sparrow',
-        activities: 'Golf, Bingo, Horseshoes',
+        activities: ['Golf', 'Bingo', 'Horseshoes'],
         since:'1429040972784',
         roomNumber: '106',
         image: 'img/ContactPhotos/elder1.jpg'
       }, {
         id: 1,
         name: 'Grouch O\'Callahan',
-        activities: 'Chess, Gardening, Rummy',
+        activities: ['Chess', 'Gardening', 'Rummy'],
         since:'1425672670000',
         roomNumber: '303',
         image: 'img/ContactPhotos/elder2.jpg'
       }, {
         id: 2,
         name: 'Olga Finlayson',
-        activities: 'Reading, Drinking, Watching TV',
+        activities: ['Reading', 'Drinking', 'Watching TV'],
         since:'1427919070000',
         roomNumber: '242',
         image: 'img/ContactPhotos/elder3.jpg'
       }, {
         id: 3,
         name: 'Marie Walton',
-        activities: 'Hiking, Biking, Travel',
+        activities: ['Hiking', 'Biking', 'Travel'],
         since:'1427141470000',
         roomNumber: '117',
         image: 'img/ContactPhotos/elder4.jpg'
       }, {
         id: 4,
         name: 'Janet Miller',
-        activities: 'Poker, Bridge, Window Shopping',
+        activities: ['Poker', 'Bridge', 'Window Shopping'],
         since:'1429040972784',
         roomNumber: '321',
         image: 'img/ContactPhotos/elder5.jpg'
       }, {
         id: 5,
         name: 'Perry Governor',
-        activities: 'Biking, Drinking, Museums',
+        activities: ['Biking', 'Drinking', 'Museums'],
         since:'1425240670000',
         roomNumber: '237',
         image: 'img/ContactPhotos/elder6.jpg'
       }, {
         id: 6,
         name: 'Adam Bradleyson',
-        activities: 'History, Museums, Re-enactments, Theatre',
+        activities: ['History', 'Museums', 'Re-enactments', 'Theatre'],
         since:'1414008670000',
         roomNumber: '113',
         image: 'img/ContactPhotos/elder7.jpg'
       },{
         id: 7,
         name: 'Hoa Nguyen',
-        activities: 'Gardening, Sewing, Painting',
+        activities: ['Gardening', 'Sewing', 'Painting'],
         since:'1405455070000',
         roomNumber: '204',
         image: 'img/ContactPhotos/elder8.jpg'
       },{
         id: 8,
         name: 'Mike November',
-        activities: 'Driving, Antiques, Smoking',
+        activities: ['Driving', 'Antiques', 'Smoking'],
         since:'1395605470000',
         roomNumber: '309',
         image: 'img/ContactPhotos/elder9.jpg'
       },{
         id: 9,
         name: 'Ilene Killian',
-        activities: 'Reading, Book Clubs, Cooking',
+        activities: ['Reading', 'Book Clubs', 'Cooking'],
         since:'1389989470000',
         roomNumber: '121',
         image: 'img/ContactPhotos/elder10.jpg'
       },{
         id: 10,
         name: 'Matilda Wexford',
-        activities: 'Smoking, Drinking, Bingo',
+        activities: ['Smoking', 'Drinking', 'Bingo'],
         since:'1385928670000',
         roomNumber: '216',
         image: 'img/ContactPhotos/elder11.jpg'
       },{
         id: 11,
         name: 'Bob Stout',
-        activities: 'Whittling, Piano, Book Clubs',
+        activities: ['Whittling', 'Piano', 'Book Clubs'],
         since:'1378732370000',
         roomNumber: '100',
         image: 'img/ContactPhotos/elder12.jpg'
       },{
         id: 12,
         name: 'Walter Pollak',
-        activities: 'Walking, Parks, Poker',
+        activities: ['Walking', 'Parks', 'Poker'],
         since:'1376511070000',
         roomNumber: '305',
         image: 'img/ContactPhotos/elder13.jpg'
@@ -99,7 +99,7 @@ angular.module('starter.services', [])
 
       for (var i = 0; i < directory.length; i++) {
         var date= moment(directory[i].since,"x");
-        directory[i].since = date.format("ddd MMM Do, YYYY");
+        directory[i].since = date.format("dddd, MMM Do, YYYY");
       }
 
       return {
