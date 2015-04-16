@@ -10,10 +10,32 @@ The Friends service returns an array of friend data
     </ion-nav-back-button>
   </ion-nav-bar>
   <ion-content class="padding">
-    <img ng-src="{{activity.image}}" style="width: 64px; height: 64px">
-    <h3>Notes</h3>
-    <p>
-      {{activity.notes}}
-    </p>
+
+    <div class="card">
+      <div class="row">
+        <h2 style="font-size:3.5em; font-style:bold;text-align:center;margin:auto;">{{activity.name}}</h2>
+      </div>
+
+      <!--<div class="row">
+        <h3 style="padding-top:10px;padding-bottom:20px;font-size:2em; font-style:bold;text-align:center;margin:auto;">{{activity.notes}}</h3>
+      </div> -->
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <img  ng-src="{{activity.image}}" height="325px" style="padding-left:40px;">
+        </div>
+
+        <!-- Use item avatar on the list to get pics and names-->
+        <div class="col-md-6 list list-inset item item-stable">
+          <h3 style="font-size:2.5em; font-style:bold;">Residents who like this:</h3>
+          <!--<div class="item item-stable" style="font-size:1.75em; font-style:bold;"
+               ng-repeat="activity in person.activities">
+            {{activity}}-->
+        </div>
+      </div>
+
+    </div>
+
   </ion-content>
 </ion-view>
