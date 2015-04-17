@@ -4,9 +4,9 @@
     <ion-list class="list">
       <ion-item class="item card item-stable" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}"">
 
-        <img class="col-md-6" ng-src="{{activity.image}}" height="325px">
+        <img class="col-md-4" ng-src="{{activity.image}}" height="325px">
 
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h2 style="font-size:3.5em; font-style:bold;">{{activity.name}}</h2>
             <h3 style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> Residents who like this: </h3>
             <!--<span class="col-md-4" style="font-size:2em; font-style:bold; color:#444;" ng-repeat="activity in person.activities">-->

@@ -131,14 +131,14 @@ angular.module('starter.services', [])
         id: 0,
         name: 'Antiques',
         people: [{name:'Mike November', id:'8', image:'img/ContactPhotos/elder9.jpg'}],
-        image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+        image: 'img/activities/antiques.jpg'
       }, {
         id: 1,
         name: 'Biking',
         people: [{name:'Marie Walton', id:'2', image:'img/ContactPhotos/elder3.jpg'}, {name:'Perry Governor', id:'5', image:'img/ContactPhotos/elder6.jpg'},
           {name:'Marie Walton', id:'2', image:'img/ContactPhotos/elder3.jpg'}
         ],
-        image: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+        image: 'img/activities/biking.jpg'
       }, {
         id: 2,
         name: 'Bingo',
