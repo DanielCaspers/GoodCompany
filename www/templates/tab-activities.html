@@ -8,10 +8,8 @@
 
         <div class="col-md-8">
             <h2 style="font-size:3.5em; font-style:bold;">{{activity.name}}</h2>
-            <h3 style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> Residents who like this: </h3>
-            <!--<span class="col-md-4" style="font-size:2em; font-style:bold; color:#444;" ng-repeat="activity in person.activities">-->
-            <!--{{activity}}-->
-            <!--</span>-->
+            <h3 ng-hide="null == activity.people" style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> Residents who like this: </h3>
+            <h3 ng-show="null == activity.people" style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> It seems that nobody is interested... </h3>
             <div ng-repeat="person in activity.people">
                 <div class="col-md-4" >
                     <img class="row" style="width: 128px; height: 128px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}"  alt="" >

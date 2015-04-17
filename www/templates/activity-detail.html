@@ -27,7 +27,8 @@ The Friends service returns an array of friend data
         </div>
 
         <div class="col-md-6 list list-inset item item-stable">
-          <h3 style="font-size:2.5em; font-style:bold;">Residents who like this:</h3>
+          <h3 ng-hide="null == activity.people" style="font-size:2.5em; font-style:bold;">Residents who like this:</h3>
+          <h3 ng-show="null == activity.people" style="font-size:2.5em; font-style:bold;">It seems that nobody is interested in this.</h3>
           <div class="item item-stable item-thumbnail-left" style="font-size:1.75em; font-style:bold;"
                ng-repeat="person in activity.people">
             <img ng-src="{{person.image}}">
