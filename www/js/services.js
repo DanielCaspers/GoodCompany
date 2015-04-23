@@ -1,7 +1,6 @@
 angular.module('starter.services', [])
 
     .factory('Directory', function() {
-      // Might use a resource here that returns a JSON array
 
       // Some fake testing data
       var directory = [{
@@ -145,7 +144,7 @@ angular.module('starter.services', [])
       }, {
         id: 3,
         name: 'Book Clubs',
-        people: [{name:'Ilene Killian', id:'9', image:'img/ContactPhotos/elder10.jpg'}, {name:'Bob Stout', id: '11', image:'img/ContactPhotos/elder11.jpg'}],
+        people: [{name:'Ilene Killian', id:'9', image:'img/ContactPhotos/elder10.jpg'}, {name:'Bob Stout', id: '11', image:'img/ContactPhotos/elder12.jpg'}],
         image: 'img/activities/bookclub.jpg'
       }, {
         id: 4,
@@ -264,7 +263,7 @@ angular.module('starter.services', [])
       },{
         id: 27,
         name: 'Whittling',
-        people: [{name:'Bob Stout', id:'11', image:'img/ContactPhotos/elder13.jpg'}],
+        people: [{name:'Bob Stout', id:'11', image:'img/ContactPhotos/elder12.jpg'}],
         image: 'img/activities/whittling.jpg'
       },{
         id: 28,
