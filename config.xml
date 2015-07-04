@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.example862713" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Activity Intersector</name>
+  <name>GoodCompany</name>
   <description>&#xD;
-      Find activities you have in common with others&#xD;
+      GoodCompany: A digital resident directory for Ecumen Seasons at Apple Valley.&#xD;
     </description>
   <author email="caspe135@umn.edu" href="http://github.com/DanielCaspers">&#xD;
       Ionic Framework Team&#xD;

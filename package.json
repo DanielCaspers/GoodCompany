@@ -1,29 +1,29 @@
 {
-"name": "GoodCompany",
-"version": "1.0.0",
-"description": "GoodCompany: A digital resident directory for Ecumen Seasons at Apple Valley.",
-"devDependencies": {
-"bower": "^1.3.3",
-"gulp": "^3.8.11",
-"gulp-debug": "^2.0.0",
-"gulp-rewrite-css": "0.0.4",
-"gulp-util": "^2.2.14",
-"main-bower-files": "^2.5.0",
-"shelljs": "^0.3.0",
-"gulp-concat": "^2.5.2",
-"gulp-filter": "^2.0.2",
-"gulp-rename": "^1.2.2",
-  "gulp-sass": "^0.7.1",
-  "gulp-order": "^1.1.1"
-},
-"optionalDependencies": {
-"gulp-concat-css": "^2.1.0",
-"gulp-less": "^3.0.1",
-"gulp-minify-css": "^0.3.0",
-"less": "^2.4.0"
-},
-"cordovaPlugins": [],
-"cordovaPlatforms": [
-"android"
-]
+  "name": "GoodCompany",
+  "version": "1.0.0",
+  "description": "GoodCompany: A digital resident directory for Ecumen Seasons at Apple Valley.",
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp": "^3.8.11",
+    "gulp-debug": "^2.0.0",
+    "gulp-rewrite-css": "0.0.4",
+    "gulp-util": "^2.2.14",
+    "main-bower-files": "^2.5.0",
+    "shelljs": "^0.3.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-filter": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^0.7.1",
+    "gulp-order": "^1.1.1"
+  },
+  "optionalDependencies": {
+    "gulp-concat-css": "^2.1.0",
+    "gulp-less": "^3.0.1",
+    "gulp-minify-css": "^0.3.0",
+    "less": "^2.4.0"
+  },
+  "cordovaPlugins": [],
+  "cordovaPlatforms": [
+    "android"
+  ]
 }
