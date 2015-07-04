@@ -244,7 +244,7 @@ angular.module('starter.services', [])
         id: 23,
         name: 'Socializing',
         people: [{name:'Olga Finlayson', id:'2', image:'img/ContactPhotos/elder3.jpg'}, {name:'Perry Governor', id: '5', image:'img/ContactPhotos/elder6.jpg'}, {name:'Matilda Wexford', id: '10', image:'img/ContactPhotos/elder11.jpg'}],
-        image: 'img/activities/Socializing.jpg'
+        image: 'img/activities/socializing.jpg'
       },{
         id: 24,
         name: 'Travel',
