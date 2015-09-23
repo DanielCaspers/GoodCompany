@@ -5033,7 +5033,7 @@ a.item-content {
   padding: 3px 8px;
   min-width: 10px;
   border-radius: 10px;
-  vertical-align: baseline;
+  vertical-align: baseline; /* consider middle - Dan */
   text-align: center;
   white-space: nowrap;
   font-weight: bold;

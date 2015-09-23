@@ -5,23 +5,25 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{person.name}}" scrollable="False">
-  <ion-nav-bar class="bar-positive">
+  <ion-nav-bar class="bar bar-header bar-positive">
     <ion-nav-back-button>
     </ion-nav-back-button>
-  </ion-nav-bar >
-  <ion-content class="padding">
-
-    <div class="card">
+  </ion-nav-bar>
+  
+  <ion-content>
+    <div class="card person">
       <div class="row">
-        <h2 style="font-size:3.5em; font-style:bold;text-align:center;margin:auto;">{{person.name}}</h2>
+        <h1 class="card-title">{{person.name}}</h1>
       </div>
 
       <div class="row">
-        <h3 style="padding-top:10px;font-size:2em; font-style:bold;text-align:center;margin:auto;"> Resident Since {{person.since}}</h3>
-      </div>
+        <div class="col-md-6">
+          <h2 class="person-info"> Resident Since {{person.since}}</h2>
+        </div>
 
-      <div class="row">
-        <h3 style=" padding-top:10px;padding-bottom:20px;font-size:2em; font-style:bold;text-align:center;margin:auto;"> Room {{person.roomNumber}}</h3>
+        <div class="col-md-6">
+          <h2 class="person-info"> Room {{person.roomNumber}}</h2>
+        </div>
       </div>
 
       <div class="row">
@@ -31,9 +33,8 @@
         </div>
 
         <div class="col-md-6 list list-inset item item-stable">
-          <h3 style="font-size:2.5em; font-style:bold;">Activities</h3>
-          <div class="item item-stable" style="font-size:1.75em; font-style:bold;"
-               ng-repeat="activity in person.activities">
+          <h2 class="list-title">Activities</h2>
+          <div class="item item-stable activity" ng-repeat="activity in person.activities">
             <a href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
           </div>
         </div>

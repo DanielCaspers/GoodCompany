@@ -2,13 +2,13 @@
   <ion-content>
 
     <ion-list class="list">
-      <ion-item class="item card item-stable" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}"">
+      <ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}"">
 
         <img class="col-md-4" ng-src="{{activity.image}}" height="325px">
 
         <div class="col-md-8">
-            <h2 style="font-size:3.5em; font-style:bold;">{{activity.name}}</h2>
-            <h3 ng-hide="null == activity.people" style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> Residents who like this: </h3>
+            <h2 class="card-title">{{activity.name}}</h2>
+            <h3 ng-hide="null == activity.people" class="activity-info"> Residents who like this: </h3>
             <h3 ng-show="null == activity.people" style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> It seems that nobody is interested... </h3>
             <div ng-repeat="person in activity.people">
                 <div class="col-md-4" >
