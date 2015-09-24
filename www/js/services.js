@@ -98,7 +98,7 @@ angular.module('starter.services', [])
 
       for (var i = 0; i < directory.length; i++) {
         var date= moment(directory[i].since,"x");
-        directory[i].since = date.format("dddd, MMM Do, YYYY");
+        directory[i].since = date.format("MMM. Do, YYYY");
       }
 
       return {

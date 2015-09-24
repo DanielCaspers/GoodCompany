@@ -3,22 +3,23 @@
 
     <ion-list class="list">
       <ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}"">
+        <div class="row">
+          <img class="col-md-4" ng-src="{{activity.image}}" height="325px">
 
-        <img class="col-md-4" ng-src="{{activity.image}}" height="325px">
-
-        <div class="col-md-8">
+          <div class="col-md-8">
             <h2 class="card-title">{{activity.name}}</h2>
             <h3 ng-hide="null == activity.people" class="activity-info"> Residents who like this: </h3>
-            <h3 ng-show="null == activity.people" style="padding-top:60px;font-size:2em; font-style:bold; color:#444;"> It seems that nobody is interested... </h3>
+            <h3 ng-show="null == activity.people" class="activity-info"> It seems that nobody is interested... </h3>
             <div ng-repeat="person in activity.people">
-                <div class="col-md-4" >
-                    <img class="row" style="width: 128px; height: 128px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}"  alt="" >
-                    <a class="row" style="font-size:1.5em; font-style:bold; " href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
-                </div>
+              <div class="col-md-4" >
+                <img style="width: 205px; height: 205px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
+                <a class="badge badge-positive badge-lg" style="position:relative; margin-left: 30px; margin-top:-10px;" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <i class="icon ion-chevron-right icon-accessory"></i>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>

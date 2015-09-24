@@ -7,7 +7,7 @@
 
     <div class="card activity">
       <div class="row">
-        <h1 class="card-title">{{activity.name}}</h1>
+        <h2 class="card-title">{{activity.name}}</h2>
       </div>
 
       <div class="row">
@@ -16,11 +16,11 @@
         </div>
 
         <div class="col-md-6 list list-inset item item-stable">
-          <h2 ng-hide="null == activity.people" class="list-title">Residents who like this:</h2>
-          <h2 ng-show="null == activity.people" class="list-title">It seems that nobody is interested in this.</h2>
+          <h3 ng-hide="null == activity.people" class="list-title">Residents who like this:</h3>
+          <h3 ng-show="null == activity.people" class="list-title">It seems that nobody is interested in this.</h3>
           <div class="item item-stable item-thumbnail-left" class="person" ng-repeat="person in activity.people">
             <img ng-src="{{person.image}}">
-            <a href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+            <a class="badge badge-positive badge-lg" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
           </div>
         </div>
       </div >
