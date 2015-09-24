@@ -18,9 +18,9 @@ li.activity{
 
 }
 
-.card.activity a, .card.person a{
+/* .card.activity a, .card.person a{
   padding-right: 16px;
-}
+} */
 
 li.person, li.activity{
   font-size:1.75em;
@@ -47,11 +47,17 @@ h1.card-title, h2.card-title{
   min-width:25px;
   max-width:250px;
   width:90%;
-  text-align: justify;
   word-wrap: break-word;
   margin:auto;
   padding-top: 8px;
   paddong-right:7px;
+}
+
+.button{
+  font-size: 1.2em;
+  font-weight:bold;
+  border-radius: 5px;
+  display:block;
 }
 
 .person .person-info{

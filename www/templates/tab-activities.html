@@ -12,8 +12,8 @@
             <h3 ng-show="null == activity.people" class="activity-info"> It seems that nobody is interested... </h3>
             <div ng-repeat="person in activity.people">
               <div class="col-md-4" >
-                <img style="width: 205px; height: 205px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
-                <a class="badge badge-positive badge-lg" style="position:relative; margin-left: 30px; margin-top:-10px;" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+                <img style="width: 140px; height: 140px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
+                <a class="button button-positive icon-right ion-chevron-right " href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
               </div>
             </div>
           </div>
