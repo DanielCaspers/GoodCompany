@@ -37,7 +37,7 @@ h1.card-title, h2.card-title{
   font-style:bold;
 }
 
-.badge.badge-lg{
+/*.badge.badge-lg{
   line-height: 20px;
   height:20px;
   font-size: 1.2em;
@@ -51,7 +51,7 @@ h1.card-title, h2.card-title{
   margin:auto;
   padding-top: 8px;
   paddong-right:7px;
-}
+}*/
 
 .button{
   font-size: 1.2em;
