@@ -1,34 +1,34 @@
 <ion-view view-title="Activities" scrollable="Yes">
   <ion-content>
-
-    <ion-list class="list">
-      <ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}"">
-        <div class="row">
-		  <div class="col-sm-4">
-			<img style="width: 90%; height: 325px;" ng-src="{{activity.image}}">
-		  </div>
-		  
-          <div class="col-sm-8">
+		<!-- Explicitly ignoring bootstrap container to gain full width of viewport without reconstructing/compiling LESS -->
+		<ion-list class="list">
+		  <ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
 			<div class="row">
-				<h2 class="card-title">{{activity.name}}</h2>
-			</div>
-			
-			<div class="row">
-				<h3 ng-hide="null == activity.people" class="activity-info"> Residents who like this: </h3>
-				<h3 ng-show="null == activity.people" class="activity-info"> It seems that nobody is interested... </h3>
-			</div>
-			
-            <div ng-repeat="person in activity.people">
-              <div class="col-sm-6 col-lg-4 nametag" >
-                <img style="width: 90%; height: 200px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
-                <a style="width:90%;  margin-bottom:10px;" class="button button-positive icon-right ion-chevron-right" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
-              </div>
-            </div>
-          </div>
+			  <div class="col-sm-4">
+				<img style="width: 90%; height: 325px;" ng-src="{{activity.image}}">
+			  </div>
+			  
+			  <div class="col-sm-8">
+				<div class="row">
+					<h2 class="card-title">{{activity.name}}</h2>
+				</div>
+				
+				<div class="row">
+					<h3 ng-hide="null == activity.people" class="activity-info"> Residents who like this: </h3>
+					<h3 ng-show="null == activity.people" class="activity-info"> It seems that nobody is interested... </h3>
+				</div>
+				
+				<div ng-repeat="person in activity.people">
+				  <div class="col-sm-6 col-lg-4 nametag" >
+					<img style="width: 90%; height: 200px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
+					<a style="width:90%;  margin-bottom:10px;" class="button button-positive icon-right ion-chevron-right" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+				  </div>
+				</div>
+			  </div>
 
-          <i class="icon ion-chevron-right icon-accessory"></i>
-        </div>
-      </ion-item>
-    </ion-list>
+			  <i class="icon ion-chevron-right icon-accessory"></i>
+			</div>
+		  </ion-item>
+		</ion-list>
   </ion-content>
 </ion-view>

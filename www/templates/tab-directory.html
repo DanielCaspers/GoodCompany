@@ -1,42 +1,44 @@
-<ion-view view-title="Directory">
+<ion-view view-title="Directory" scrollable="Yes">
   <ion-content>
-    <div class="card 
-    <ion-list class="list">
-      <ion-item class="item item-text-wrap item-stable card person" ng-repeat="person in directory" href="#/tab/directory/{{person.id}}">
-        <div class="row">
-          <div class="col-sm-4">
-            <img style="width:90%; height:180px;"ng-src="{{person.image}}">
-          </div>
+		<!-- Explicitly ignoring bootstrap container to gain full width of viewport without reconstructing/compiling LESS -->
+    <div class="">
+			<ion-list class="list">
+				<ion-item class="item item-text-wrap item-stable card person" ng-repeat="person in directory" href="#/tab/directory/{{person.id}}">
+					<div class="row">
+						<div class="col-sm-4">
+							<img style="width:90%; height:180px;"ng-src="{{person.image}}">
+						</div>
 
-          <div class="col-sm-8">
-            
-            <div class="row">
-              <h2 class="col-sm-8">{{person.name}}</h2>
-              <h4 class="col-sm-4" style="color:#444; margin-top:10px;"> Room {{person.roomNumber}}</h4>
-            </div>
-            
-            <div class="row" style="margin-top:20px;">
-              <h3 class="col-sm-12" style="color:#444;"> Resident since {{person.since}}</h3>
-            </div>
+						<div class="col-sm-8">
+							
+							<div class="row">
+								<h2 class="col-sm-8">{{person.name}}</h2>
+								<h4 class="col-sm-4" style="color:#444; margin-top:10px;"> Room {{person.roomNumber}}</h4>
+							</div>
+							
+							<div class="row" style="margin-top:20px;">
+								<h3 class="col-sm-12" style="color:#444;"> Resident since {{person.since}}</h3>
+							</div>
 
-            <div class="row"  style="margin-top: 15px;">
-              <h3  class="col-sm-12 col-md-3 visible-md-block visible-lg-block" style="margin-top:10px; color:#444;"> Activities: </h3>
-              <div class="col-sm-12 col-md-9">
-                <div class="row">
-                  <div class="col-sm-6 col-md-4" ng-repeat="activity in person.activities">
-                    <a class="button icon-right ion-chevron-right button-positive visible-md-block visible-lg-block" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
-					 <a class="button button-positive visible-xs-block visible-sm-block" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+							<div class="row"  style="margin-top: 15px;">
+								<h3  class="col-sm-12 col-md-3 visible-md-block visible-lg-block" style="margin-top:10px; color:#444;"> Activities: </h3>
+								<div class="col-sm-12 col-md-9">
+									<div class="row">
+										<div class="col-sm-6 col-md-4" ng-repeat="activity in person.activities">
+											<a class="button button-positive visible-xs-block visible-sm-block" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
+											<a class="button icon-right ion-chevron-right button-positive visible-md-block visible-lg-block" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
 
-          </div>
-          <i class="icon ion-chevron-right icon-accessory"></i>
-        </div>
+						</div>
+						<i class="icon ion-chevron-right icon-accessory"></i>
+					</div>
 
-      </ion-item>
-
-    </ion-list>
+				</ion-item>
+			</ion-list>
+		</div>
   </ion-content>
 </ion-view>

@@ -4,42 +4,43 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{person.name}}" scrollable="False">
+<ion-view view-title="{{person.name}}" scrollable="No">
   <ion-nav-bar class="bar bar-header bar-positive">
     <ion-nav-back-button>
     </ion-nav-back-button>
   </ion-nav-bar>
   
   <ion-content>
-    <div class="card person">
+    <div class="container">
       <div class="row">
-        <h2 class="card-title">{{person.name}}</h2>
-      </div>
+				<div class="col-xs-6">
+					<img ng-src="{{person.image}}" style=" width:100%;"> 
+				</div>
+				
+				<div class="col-xs-6">
+					<h1 class="card-title">{{person.name}}</h1>
+					<h2 class="person-info"> Room {{person.roomNumber}}</h2>
+					<h2 class="person-info"> Resident since {{person.since}}</h2>
+				</div>
+				
+			</div>
 
       <div class="row">
-        <div class="col-md-6">
-          <h3 class="person-info"> Resident since {{person.since}}</h3>
-        </div>
-
-        <div class="col-md-6">
-          <h3 class="person-info"> Room {{person.roomNumber}}</h3>
-        </div>
+			
+				<div class="col-xs-12">
+					<div class="list list-inset">
+						<div class="item item-divider">Activities</div>
+						<div class="item activity" ng-repeat="activity in person.activities">
+							<a class="button button-full button-positive" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 hidden-xs">
+					<img style="width:90%;" src="{{activity.image}}">
+				</div>
       </div>
-
-      <div class="row">
-
-        <div class="col-md-6">
-          <img ng-src="{{person.image}}" style="padding-left:40px; max-width:100%;"> <!--  max-height:100%-->
-        </div>
-
-        <div class="col-md-6 list list-inset item item-stable">
-          <h3 class="list-title">Activities</h3>
-          <div class="item item-stable activity" ng-repeat="activity in person.activities">
-            <a href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
-          </div>
-        </div>
-
-      </div>
+			
     </div>
   </ion-content>
 </ion-view>
