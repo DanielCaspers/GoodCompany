@@ -58,6 +58,7 @@ h1.card-title, h2.card-title{
   font-weight:bold;
   border-radius: 5px;
   display:block;
+  white-space:normal;
 }
 
 .person .person-info{
