@@ -53,6 +53,23 @@ h1.card-title, h2.card-title{
   paddong-right:7px;
 }*/
 
+img{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 2px solid red;
+}
+
+.nametag img{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.nametag .button{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
 .button{
   font-size: 1.2em;
   font-weight:bold;
