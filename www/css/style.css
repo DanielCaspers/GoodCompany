@@ -75,7 +75,9 @@ img{
   font-weight:bold;
   border-radius: 5px;
   display:block;
-  white-space:normal;
+  /* The code below was useful when I had the chevron icon present at xs and sm form factors, 
+		but a better solution was to hide the chevron at those sizes */
+  /* white-space: normal;*/
 }
 
 .person .person-info{
@@ -109,7 +111,7 @@ p.text-lg, h3{
 
 p, p.text-md, h4{
   font-size:1.5em !important;
-  font-weight:400 !important;
+  font-weight:500;
   line-height: 0.8em;
 }
 
