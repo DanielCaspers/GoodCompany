@@ -7,8 +7,11 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('PersonCtrl', function($scope, $stateParams, Directory) {
+.controller('PersonCtrl', function($scope, $stateParams, Directory, Activities) {
   $scope.person = Directory.get($stateParams.personID);
+	$scope.getActivity = function(activityID){
+		return Activities.get(activityID);
+	}
 })
 
 .controller('ActivitiesCtrl', function($scope, Activities) {
