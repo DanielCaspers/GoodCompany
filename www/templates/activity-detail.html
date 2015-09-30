@@ -3,29 +3,39 @@
     <ion-nav-back-button>
     </ion-nav-back-button>
   </ion-nav-bar>
+	
   <ion-content>
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-xs-12 col-sm-6" >
+					<img ng-src="{{activity.image}}" style="min-height:max-height:400px; width:100%;">
+				</div>
+				
+				<div class="col-xs-12 col-sm-6">
+					<h1 class="card-title">{{activity.name}}</h1>
+				</div>
+			</div>
 
-    <div class="card activity">
-      <div class="row">
-        <h2 class="card-title">{{activity.name}}</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <img ng-src="{{activity.image}}" height="325px">
-        </div>
-
-        <div class="col-md-6 list list-inset item item-stable">
-          <h3 ng-hide="null == activity.people" class="list-title">Residents who like this:</h3>
-          <h3 ng-show="null == activity.people" class="list-title">It seems that nobody is interested in this.</h3>
-          <div class="item item-stable item-thumbnail-left" class="person" ng-repeat="person in activity.people">
-            <img ng-src="{{person.image}}">
-            <a class="badge badge-positive badge-lg" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
-          </div>
-        </div>
-      </div >
-
-    </div>
-
+			<div style="margin-top:15px;">
+				
+				<div class="row">
+					<div class="col-xs-12 item item-divider">
+						<h2 ng-hide="null == activity.people" class="list-title"style="text-align:center" >Residents who like this:</h2>
+						<h2 ng-show="null == activity.people" class="list-title" style="text-align:center">It seems that nobody is interested in this.</h2>	
+					</div>
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-xs-12 col-sm-6 col-lg-4 person nametag" ng-repeat="person in activity.people" style="margin-top: 10px; margin-bottom: 10px;">
+						<img ng-src="{{person.image}}" style="height:200px; width:100%; margin: auto;">
+						<a class="button button-full button-positive icon-right ion-chevron-right" style="margin-top:-10px;" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
   </ion-content>
 </ion-view>
