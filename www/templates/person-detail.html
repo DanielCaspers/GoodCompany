@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row">
 				<div class="col-xs-6">
-					<img ng-src="{{person.image}}" style="max-height:400px; width:100%;"> 
+					<img ng-src="{{person.image}}" style="min-height:max-height:400px; width:100%;"> 
 				</div>
 				
 				<div class="col-xs-6">
@@ -35,10 +35,10 @@
 
 				<div class="row">
 				
-					<div class="col-xs-12 col-sm-6 col-md-4 activity" ng-repeat="activity in person.activities" style="margin-top: 10px; margin-bottom: 10px;">	
+					<div class="col-xs-12 col-sm-6 col-md-4 activity nametag" ng-repeat="activity in person.activities" style="margin-top: 10px; margin-bottom: 10px;">	
 						<div> <!-- style="display:flex; flex-flow:row wrap;" -->
 							<img ng-src="{{ getActivity(activity.id).image }}" alt="{{activity.name}}" style="height:200px; width:100%; margin: auto;"> <!-- Review data structure, perhaps very inefficient -->
-							<a class="button button-full button-positive" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
+							<a class="button button-full button-positive icon-right ion-chevron-right" style="margin-top:-10px;" href="/#/tab/activities/{{activity.id}}">{{activity.name}}</a>
 						</div>
 					</div>
 				
