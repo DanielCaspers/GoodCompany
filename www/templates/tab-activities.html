@@ -2,13 +2,13 @@
   <ion-content>
 		<!-- Explicitly ignoring bootstrap container to gain full width of viewport without reconstructing/compiling LESS -->
 		<ion-list class="list">
-		  <ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
+			<ion-item class="item item-stable card activity" ng-repeat="activity in activities" href="#/tab/activities/{{activity.id}}">
 			<div class="row">
-			  <div class="col-sm-4">
+				<div class="col-sm-4">
 					<img style="width: 90%; height: 325px;" ng-src="{{activity.image}}">
-			  </div>
-			  
-			  <div class="col-sm-8">
+				</div>
+			
+				<div class="col-sm-8">
 					<div class="row">
 						<h2 class="card-title">{{activity.name}}</h2>
 					</div>
@@ -21,14 +21,15 @@
 					<div ng-repeat="person in activity.people">
 						<div class="col-sm-6 col-lg-4 nametag" >
 							<img style="width: 90%; height: 200px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
-							<a style="width:90%;" class="button button-positive icon-right ion-chevron-right" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+							<a style="width:90%;" class="button button-positive visible-xs-block visible-sm-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+							<a style="width:90%;" class="button button-positive icon-right ion-chevron-right visible-md-block visible-lg-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
 						</div>
 					</div>
-			  </div>
+				</div>
 
-			  <i class="icon ion-chevron-right icon-accessory"></i>
+				<i class="icon ion-chevron-right icon-accessory"></i>
 			</div>
-		  </ion-item>
+		</ion-item>
 		</ion-list>
-  </ion-content>
+	</ion-content>
 </ion-view>

@@ -79,7 +79,7 @@ img{
   display:block;
   /* The code below was useful when I had the chevron icon present at xs and sm form factors, 
 		but a better solution was to hide the chevron at those sizes */
-  /* white-space: normal;*/
+  white-space: normal;
 }
 
 .person .person-info{
