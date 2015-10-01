@@ -58,7 +58,6 @@ img{
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border: 2px solid red;
 }
 
 .nametag img{
@@ -67,6 +66,7 @@ img{
 }
 
 .nametag .button{
+	margin-top: -10px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	margin-bottom:10px;
@@ -90,7 +90,6 @@ img{
 
 .activity .activity-info{
   padding-bottom: 8px;
-  color:#444;
 }
 
 h1{
