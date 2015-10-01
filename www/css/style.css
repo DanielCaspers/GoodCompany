@@ -1,63 +1,30 @@
-ul, ol{
-
-}
-
-ul.activities-list, ol.activities-list{
-
-}
-
-ul.people-list, ol.people-list{
-
-}
-
-li.person{
-
-}
-
-.activities .activity a{
-	font-size:1.75em;
-  font-style:bold;
-}
-
-.card.activity a, .card.person a{
-  padding-right: 16px;
-}
-
-li.person, li.activity{
-  font-size:1.75em;
-  font-style:bold;
-}
-
-h1.card-title, h2.card-title{
-  text-align:center;
-  margin-top:-10px;
-}
-
-.list-title{
-  font-size:2.5em;
-  font-style:bold;
-}
-
-/*.badge.badge-lg{
-  line-height: 20px;
-  height:20px;
-  font-size: 1.2em;
-  min-height: 40px;
-  max-height: 60px;
-
-  min-width:25px;
-  max-width:250px;
-  width:90%;
-  word-wrap: break-word;
-  margin:auto;
-  padding-top: 8px;
-  paddong-right:7px;
-}*/
+/*
+		GENERAL ELEMENT STYLES SECTION
+*/
 
 img{
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+}
+
+.button{
+  font-size: 1.2em;
+  font-weight:bold;
+  border-radius: 5px;
+  display:block;
+	
+  /* The code below was useful when I had the chevron icon present at xs and sm form factors, 
+		but a better solution was to hide the chevron at those sizes */
+  white-space: normal;
+}
+
+/*
+	SPECIFIC USAGE SECTION
+*/
+/* Provides more content room on the right side on card lists than the default value */
+.card.activity a, .card.person a{
+  padding-right: 16px;
 }
 
 .nametag img{
@@ -66,37 +33,28 @@ img{
 }
 
 .nametag .button{
-	margin-top: -10px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+	
+	margin-top: -10px;
 	margin-bottom:10px;
 }
 
-.button{
-  font-size: 1.2em;
-  font-weight:bold;
-  border-radius: 5px;
-  display:block;
-  /* The code below was useful when I had the chevron icon present at xs and sm form factors, 
-		but a better solution was to hide the chevron at those sizes */
-  white-space: normal;
-}
-
-.person .person-info{
-  padding-top:10px;
-  text-align:center;
-  margin:auto;
-}
-
-.activity .activity-info{
-  padding-bottom: 8px;
-}
+/*
+	FONT SECTION:
+	Using "!important" to override BS3 and Ionic Framework default style sheets. 
+*/
 
 h1{
   font-size:3.25em !important;
   font-weight:bold !important;
   line-height: 2em !important;
 	color: #444 !important;
+}
+
+h1.card-title, h2.card-title{
+  text-align:center;
+  margin-top:-10px;
 }
 
 h2{
