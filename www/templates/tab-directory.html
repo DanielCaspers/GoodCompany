@@ -13,15 +13,15 @@
 							
 							<div class="row">
 								<h2 class="col-sm-9">{{person.name}}</h2>
-								<h4 class="col-sm-3" style="color:#444; margin-top:10px;"> Room {{person.roomNumber}}</h4>
+								<h4 class="col-sm-3" style="margin-top:10px;"> Room {{person.roomNumber}}</h4>
 							</div>
 							
 							<div class="row" style="margin-top:20px;">
-								<h3 class="col-sm-12" style="color:#444;"> Resident since {{person.since}}</h3>
+								<h3 class="col-sm-12"> Resident since {{person.since}}</h3>
 							</div>
 
 							<div class="row"  style="margin-top: 15px;">
-								<h3  class="col-sm-12 col-md-3 visible-md-block visible-lg-block" style="margin-top:10px; color:#444;"> Activities: </h3>
+								<h3  class="col-sm-12 col-md-3 visible-md-block visible-lg-block" style="margin-top:10px;"> Activities: </h3>
 								<div class="col-sm-12 col-md-9">
 									<div class="row">
 										<div class="col-sm-6 col-md-4" ng-repeat="activity in person.activities">
