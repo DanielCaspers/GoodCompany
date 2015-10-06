@@ -40,6 +40,11 @@ img{
 	margin-bottom:10px;
 }
 
+.tab-override{
+	font-size: 2em !important;
+	line-height: 2em !important;
+}
+
 /*
 	FONT SECTION:
 	Using "!important" to override BS3 and Ionic Framework default style sheets. 
