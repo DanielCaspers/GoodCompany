@@ -22,7 +22,9 @@
 							
 							<div ng-repeat="person in activity.people">
 								<div class="col-sm-6 col-lg-4 nametag" >
-									<img style="width: 90%; height: 200px;" href="/#/tab/directory/{{person.id}}" ng-src="{{person.image}}">
+									<a href="/#/tab/directory/{{person.id}}">
+										<img style="width: 90%; height: 200px;" alt="{{person.name}}" ng-src="{{person.image}}">
+									</a>
 									<a style="width:90%;" class="button button-positive visible-xs-block visible-sm-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
 									<a style="width:90%;" class="button button-positive icon-right ion-chevron-right visible-md-block visible-lg-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
 								</div>
