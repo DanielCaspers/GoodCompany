@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('GoodCompany.controllers', [])
 
 .controller('DirectoryCtrl', function($scope, Directory) {
   $scope.directory = Directory.all();
