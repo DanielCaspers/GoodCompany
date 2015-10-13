@@ -42202,6 +42202,7 @@ function($rootScope, $state, $location, $window, $timeout, $ionicViewSwitcher, $
 
   function getBackView(view) {
     return (view ? getViewById(view.backViewId) : null);
+		//return (view ? viewHistory.backView : null);
   }
 
   function getForwardView(view) {
