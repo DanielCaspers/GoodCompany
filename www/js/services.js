@@ -116,7 +116,7 @@ angular.module('GoodCompany.services', [])
           }
           return null;
         }
-      }
+      };
     })
 
 /**
@@ -280,5 +280,5 @@ angular.module('GoodCompany.services', [])
           // Simple index lookup
           return activities[activityID];
         }
-      }
+      };
     });

@@ -4,14 +4,14 @@ angular.module('GoodCompany.controllers', [])
   $scope.directory = Directory.all();
   $scope.remove = function(person) {
     Directory.remove(person);
-  }
+  };
 })
 
 .controller('PersonCtrl', function($scope, $stateParams, Directory, Activities) {
   $scope.person = Directory.get($stateParams.personID);
 	$scope.getActivity = function(activityID){
 		return Activities.get(activityID);
-	}
+	};
 })
 
 .controller('ActivitiesCtrl', function($scope, Activities) {
