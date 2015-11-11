@@ -10,35 +10,35 @@ angular.module('GoodCompany.services', [])
         id: 0,
         name: 'Ben Sparrow',
         activities: [ {name:'Golf', id:'10'}, {name:'Bingo', id:'2'}, {name:'Horseshoes', id:'13'}],
-        since:'1429040972784',
+        since:'1447080972784',//1447840972784 for Actual study
         roomNumber: '106',
         image: 'img/ContactPhotos/elder1.jpg'
       }, {
         id: 1,
         name: 'Grouch O\'Callahan',
         activities: [ {name:'Chess', id:'5'}, {name:'Gardening', id:'9'}, {name:'Rummy', id:'21'}],
-        since:'1427919070000',
+        since:'1445919070000',
         roomNumber: '303',
         image: 'img/ContactPhotos/elder2.jpg'
       }, {
         id: 2,
         name: 'Olga Finlayson',
         activities: [ {name:'Reading', id:'20'}, {name:'Socializing', id:'23'}, {name:'Watching TV', id:'26'}],
-        since:'1427141470000',
+        since:'1444919070000',
         roomNumber: '242',
         image: 'img/ContactPhotos/elder3.jpg'
       }, {
         id: 3,
         name: 'Marie Walton',
         activities: [ {name:'Hiking', id:'11'}, {name:'Biking', id:'1'}, {name:'Travel', id:'24'}],
-        since:'1425672670000',
+        since:'1442919070000',
         roomNumber: '117',
         image: 'img/ContactPhotos/elder4.jpg'
       }, {
         id: 4,
         name: 'Janet Miller',
         activities: [ {name:'Poker', id:'18'}, {name:'Bridge', id:'4'}, {name:'Window Shopping', id:'28'}],
-        since:'1425240670000',
+        since:'1440919070000',
         roomNumber: '321',
         image: 'img/ContactPhotos/elder5.jpg'
       }, {
