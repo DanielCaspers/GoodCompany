@@ -12,25 +12,19 @@
 				</div>
 			</div>
 
-				
-				<div class="row" style="margin-top:15px;">
-					<div class="col-xs-12 item item-divider">
-						<h2 ng-hide="null == activity.people" class="text-center" >Residents who like this:</h2>
-						<h2 ng-show="null == activity.people" class="text-center" >It seems that nobody is interested in this.</h2>	
-					</div>
-				</div>
-				
-				<div class="row">
-				
-					<div class="col-xs-12 col-sm-6 col-lg-4 person nametag" ng-repeat="person in activity.people" style="margin-top: 10px; margin-bottom: 10px;">
-						<a href="/#/tab/directory/{{person.id}}">
-							<img ng-src="{{person.image}}" alt="{{person.name}}" style="height:200px; width:100%; margin: auto;">
-						</a>
-						<a class="button button-full button-positive visible-xs-block visible-sm-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
-						<a class="button button-full button-positive icon-right ion-chevron-right visible-md-block visible-lg-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
-					</div>
-					
-				</div>
+			<div class="col-xs-12 item item-divider" style="margin-top:15px;">
+				<h2 ng-hide="null == activity.people" class="text-center" >Residents who like this:</h2>
+				<h2 ng-show="null == activity.people" class="text-center" >It seems that nobody is interested in this.</h2>	
+			</div>
+								
+			<div class="col-xs-12 col-sm-6 col-lg-4 person nametag" ng-repeat="person in activity.people" style="margin-top: 10px; margin-bottom: 10px;">
+				<a href="/#/tab/directory/{{person.id}}">
+					<img ng-src="{{person.image}}" alt="{{person.name}}" style="height:200px; width:100%; margin: auto;">
+				</a>
+				<a class="button button-full button-positive visible-xs-block visible-sm-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+				<a class="button button-full button-positive icon-right ion-chevron-right visible-md-block visible-lg-block" href="/#/tab/directory/{{person.id}}">{{person.name}}</a>
+			</div>
+			
 		</div>
   </ion-content>
 </ion-view>
