@@ -30,34 +30,36 @@ angular.module('GoodCompany', ['ionic', 'GoodCompany.controllers', 'GoodCompany.
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: "/tab",
     abstract: true,
     templateUrl: "templates/tabs.html"
   })
 
   // Each tab has its own nav history stack:
-
-  .state('tab.directory', {
-      url: '/directory',
-      views: {
-        'tab-directory': {
-          templateUrl: 'templates/tab-directory.html',
-          controller: 'DirectoryCtrl'
-        }
-      }
-    })
-    .state('tab.person-detail', {
-      url: '/directory/:personID',
-      views: {
-        'tab-directory': {
-          templateUrl: 'templates/person-detail.html',
-          controller: 'PersonCtrl'
-        }
-      }
-    })
+	.state('tab.directory', {
+		cache: false,
+		url: '/directory',
+		views: {
+			'tab-directory': {
+				templateUrl: 'templates/tab-directory.html',
+				controller: 'DirectoryCtrl'
+			}
+		}
+	})
+	.state('tab.person-detail', {
+		cache: false,
+		url: '/directory/:personID',
+		views: {
+			'tab-directory': {
+				templateUrl: 'templates/person-detail.html',
+				controller: 'PersonCtrl'
+			}
+		}
+	})
 
   .state('tab.activities', {
+			cache: false,
       url: '/activities',
       views: {
         'tab-activities': {
@@ -66,15 +68,16 @@ angular.module('GoodCompany', ['ionic', 'GoodCompany.controllers', 'GoodCompany.
         }
       }
     })
-    .state('tab.activity-detail', {
-      url: '/activities/:activityID',
-      views: {
-        'tab-activities': {
-          templateUrl: 'templates/activity-detail.html',
-          controller: 'ActivityDetailCtrl'
-        }
-      }
-    })
+	.state('tab.activity-detail', {
+		cache: false,
+		url: '/activities/:activityID',
+		views: {
+			'tab-activities': {
+				templateUrl: 'templates/activity-detail.html',
+				controller: 'ActivityDetailCtrl'
+			}
+		}
+	})
 ;
 
   // if none of the above states are matched, use this as the fallback

@@ -2,6 +2,9 @@ angular.module('GoodCompany.services', [])
 
     .factory('Directory', function() {
 
+			//Firebase database example
+			//var myDataRef = new Firebase('https://bur0mcfdkcy.firebaseio-demo.com/');
+			
       // Some fake testing data
       var directory = [{
         id: 0,
